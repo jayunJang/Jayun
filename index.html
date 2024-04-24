@@ -17,11 +17,12 @@
     font-style: normal;}
 		html{--main-color: white; }
 		.bg-main{background: white;}
-		.bg-sub{background: var(--sub-color);color: white;}
+		.bg-white{background: white;}
+		
 		body,h1,h2,h3,p,ul,ol{margin:0px;padding:0}
 		h1,h2,h3{line-height: 1.2; }
 		div{margin: auto;}
-		
+		section{margin: 0px }
 		.bold{font-weight: bold;}
 		.bg-black{background: black;}
 		.bg-red{background: red; transition: initial;}
@@ -30,10 +31,10 @@
 		.text-black{color: black}
 		.text-main{font-family: Freesentation-9Black; text-align: center; }
 		.wrap{width:600px;margin: auto; padding: 200px 0px
-			;position: relative;}
+			;position: relative; background: transparent;}
 		.wrap p{text-align: center; font-family: Pretendard-Regular; font-size: }	
-		h2{font-size: 12rem; font-weight: 900px;padding-bottom: 600px
-		; width: 600px; line-height: 1.5}
+		h2{font-size: 10rem; font-weight: 900px;padding-bottom: 600px
+		; width: 600px; line-height: 0.5 px}
 		p{font-size: 1.5vw; color: white; width: 600px; height: 5
 			0px}
 		
@@ -44,26 +45,39 @@
     flex-direction: row;
     width: 64.1rem;
     box-sizing: border-box; position: relative; margin: auto;}
-    .sticker-txt{position: sticky; top: 40px; padding-top: 400px}
+    .sticker-txt{position: sticky; top: 40px; padding-top:100px}
     .sticker{position: absolute; top:50px; left:200;}
-	.sticker2{position: absolute; top: 1400px;left:300px}
-	.sticker3{position: absolute; top: 150px;left:500px}
-	.sticker4{position: absolute; top: 700px;left:550px}
+	.sticker2{position: absolute; top: 500px;left:175px}
+	.sticker3{position: absolute; top: 73px;left:373px}
+	.sticker4{position: absolute; top: 457px;left:550px}
 	.sticker5{position: absolute; top: 500px;left:1200px; }
 	.sticker6{position: absolute; top: 900px;left:90px}
 	.sticker7{position: relative; bottom: 300px;left:550px}
-	.sticker8{position: absolute; top: 20px;left:550px}
-	.sticker9{position: absolute; bottom:100px;left:350px}
-	.sticker10{position: absolute; top: 1200px;left:650px}
-	.sticker11{position: absolute; top:1800px;left:250px}
+	.sticker8{position: absolute; top: 20px;left:768px}
+	.sticker9{position: absolute; bottom:56px;left:432px}
+	.sticker10{position: absolute; top: 600px;left:650px}
+	.sticker11{position: absolute; top:1800px;left:222px}
 	.sticker12{position: absolute; top: 1500px;left:150px}
 	.sticker13{position: absolute; top: 1300px;left:800px;}
 	.sticker14{position: absolute; top: 800px;left:900px; }
-	.sticker15{position: absolute; top: 1900px;left:800px;}
+	.sticker15{position: absolute; top: 1900px;left:870px;}
 	.sticker16{position: absolute; top: 400px;left:900px; }
 	a{text-decoration: none; color: black;}
+   .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  }
 
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;}
 
+ .bgimg {height: 100%; width: 105%; object-fit: cover}
 
   .pic-con{position: absolute;}
 .rmwidget .draggable {cursor: grab;}
@@ -79,8 +93,14 @@
 <body>
 		<section>
 			<div class="bg-main wrap sticker-txt">
-				<h2 class="text-red text-main ">FINDING<br><br>MY<br><br>MISSING<br><br>HALF</h2>
+			
 			</div>
+			<div class="bg-video">
+  <video class="bg-video__content" autoplay muted loop>
+    <source src="Comp2.mp4" type="video/mp4" />
+    </video>
+</div>
+
 		    <div>
 		    	<img src="1.png"
 		    	class="sticker"
@@ -165,6 +185,7 @@
 
 			</div>
 		</section>
+		<section><img src="bgg.jpg" class="bgimg"></section>
 		<section class="bg-red">
 			<div class="wrap">
 				<div><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
@@ -188,9 +209,9 @@
         </p>
     	</div>
     	<div class="wrap container">
-			<div class="bg-main flex">
+			<div class="bg-white flex">
 			 분실물 등록하기 </div>
-			<div class="bg-main flex" id="click"> 
+			<div class="bg-white flex" id="click"> 
 				<a href="macBookAir14.html">반쪽 찾으러 가기</a>
 			</div>
 		</section>
